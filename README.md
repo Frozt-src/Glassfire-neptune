@@ -1,5 +1,8 @@
 <h1 align="center"><strong>Neptune Firefox</strong></h1>
 
+This is a personal edit of the creators file, not my theme but my twist.
+I Love the look and layout but have enabled some glass effects, will update and I come up with ideas.
+
 **Instructions:** 
 - This theme is compatible with the latest release of Firefox and works on both Windows and macOS.
 - To enable adaptive colors, you need to install the **[Adaptive Tab Bar Color](https://addons.mozilla.org/firefox/addon/adaptive-tab-bar-colour)** extension. If not, the tabs will appear transparent.
