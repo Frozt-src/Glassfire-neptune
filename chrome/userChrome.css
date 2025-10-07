@@ -6,3 +6,61 @@
 
 /* Extras */
 /* @import "neptune/extras/Show_bookmarks_bar_on_hover.css"; */
+
+/* ===== Glassier UI overrides (adjust here) =====
+	 Tip: Lower alpha or lower the color-mix percentages for more transparency.
+	 This layer sits AFTER the theme import, so it’s easy to tweak or remove. */
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Overall window and content surfaces at ~31% opacity (69% transparent) */
+		--neptune-main-background: #1c1b224f !important;
+		--neptune-content-background: #15141a4f !important;
+		/* Panels/menus/popups */
+		--neptune-secondary-background: #1e1e1e4f !important; /* ~31% */
+
+		/* Tabs strip base behind tabs (default ~30% -> ~20%). */
+		--neptune-tabs-default-background: #bcbcbc4f !important; /* ~31% */
+
+		/* Toolbars inherit the LWT accent; mix it to 31% opacity for consistency */
+		--neptune-toolbar-background: color-mix(in srgb, var(--lwt-accent-color) 31%, transparent) !important;
+
+		/* URL bar surface (reduce currentColor contribution for more transparency). */
+		--neptune-urlbar-background: color-mix(in srgb, currentColor 8%, var(--lwt-accent-color, transparent)) !important;   /* was ~12% */
+		--neptune-urlbar-hover-background: color-mix(in srgb, currentColor 10%, var(--lwt-accent-color, transparent)) !important; /* was ~16% */
+		--neptune-urlbar-focused-background: color-mix(in srgb, currentColor 14%, var(--lwt-accent-color, transparent)) !important; /* was ~20% */
+
+		/* General item rows/cards/buttons */
+		--neptune-item-background: color-mix(in srgb, currentColor 8%, transparent) !important;    /* was ~12% */
+		--neptune-item-hover-background: color-mix(in srgb, currentColor 12%, transparent) !important; /* was ~14% */
+		--neptune-item-active-background: color-mix(in srgb, currentColor 14%, transparent) !important; /* was ~16% */
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		/* Overall window and content surfaces at ~31% opacity (69% transparent) */
+		--neptune-main-background: #f6f6f64f !important;
+		--neptune-content-background: #ffffff4f !important;
+		/* Panels/menus/popups */
+		--neptune-secondary-background: #fafafa4f !important; /* ~31% */
+
+		/* Tabs strip base behind tabs */
+		--neptune-tabs-default-background: #c9c9c94f !important; /* ~31% */
+
+		/* Toolbars inherit the LWT accent; mix it to 31% opacity for consistency */
+		--neptune-toolbar-background: color-mix(in srgb, var(--lwt-accent-color) 31%, transparent) !important;
+
+		/* URL bar surface */
+		--neptune-urlbar-background: color-mix(in srgb, currentColor 6%, var(--lwt-accent-color, transparent)) !important;   /* was ~8% */
+		--neptune-urlbar-hover-background: color-mix(in srgb, currentColor 8%, var(--lwt-accent-color, transparent)) !important;  /* was ~12% */
+		--neptune-urlbar-focused-background: color-mix(in srgb, currentColor 10%, var(--lwt-accent-color, transparent)) !important; /* was ~16% */
+
+		/* General item rows/cards/buttons */
+		--neptune-item-background: color-mix(in srgb, currentColor 6%, transparent) !important;    /* was ~10% */
+		--neptune-item-hover-background: color-mix(in srgb, currentColor 8%, transparent) !important; /* was ~8% (kept gentle) */
+		--neptune-item-active-background: color-mix(in srgb, currentColor 10%, transparent) !important; /* was ~14% */
+	}
+}
+
+/* ===== End glass overrides ===== */
