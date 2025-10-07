@@ -12,10 +12,16 @@
 	--button-background-color: var(--neptune-item-background) !important;
 	--button-background-color-hover: var(--neptune-item-hover-background) !important;
 	--button-background-color-active: var(--neptune-item-active-background) !important;
-	--button-text-color-primary: white !important;
+	--in-content-box-border-color: var(--neptune-toolbar-border-color) !important;
+	--in-content-primary-button-text-color: white !important;
+	--in-content-button-background: var(--neptune-item-background) !important;
+	--in-content-button-background-hover: var(--neptune-item-hover-background) !important;
+	--in-content-button-background-active: var(--neptune-item-active-background) !important;
+	--in-content-primary-button-background: var(--theme-primary-color) !important;
+	--in-content-primary-button-background-hover: var(--theme-primary-hover-color) !important;
+	--in-content-primary-button-background-active: var(--theme-primary-active-color) !important;
 	--toolbarbutton-hover-background: var(--neptune-item-hover-background) !important;
 	--toolbarbutton-active-background: var(--neptune-item-active-background) !important;
-	--in-content-box-border-color: var(--neptune-toolbar-border-color) !important;
 }
 
 #input {

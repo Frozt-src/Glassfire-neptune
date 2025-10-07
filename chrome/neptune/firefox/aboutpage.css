@@ -1,6 +1,5 @@
 @-moz-document url-prefix(about:), url-prefix("chrome://") {
 	* {
-		--background-color-canvas: var(--neptune-main-background) !important;
 		--popup-background: var(--neptune-menu-background) !important;
 		--popup-button-background: var(--neptune-item-background) !important;
 		--popup-button-background-hover: var(--neptune-item-hover-background) !important;
@@ -17,12 +16,12 @@
 		--link-color-visited: mediumpurple !important;
 		--fxview-background-color: var(--neptune-main-background) !important;
 		--newtab-search-icon: url("chrome://global/skin/icons/search-glass.svg") !important;
-		--button-background-color-primary: color-mix(in srgb, accentcolor 80%, #181818) !important;
-		--button-background-color-primary-hover: color-mix(in srgb, accentcolor 85%, #262626) !important;
-		--button-background-color-primary-active: color-mix(in srgb, accentcolor 85%, #646464) !important;
-		--button-text-color-primary: white !important;
-		--button-text-color-primary-hover: var(--button-text-color-primary) !important;
-		--focus-outline-color: accentcolor !important;
+		--in-content-primary-button-background: color-mix(in srgb, accentcolor 80%, #181818) !important;
+		--in-content-primary-button-background-hover: color-mix(in srgb, accentcolor 85%, #262626) !important;
+		--in-content-primary-button-background-active: color-mix(in srgb, accentcolor 85%, #646464) !important;
+		--in-content-primary-button-text-color: white !important;
+		--in-content-primary-button-text-color-hover: var(--in-content-primary-button-text-color) !important;
+		--in-content-focus-outline-color: accentcolor !important;
 		text-decoration: inherit !important;
 	}
 

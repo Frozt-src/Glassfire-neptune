@@ -28,10 +28,6 @@
 }
 
 @media -moz-pref("sidebar.revamp") {
-	.sidebar-splitter {
-		background-color: transparent !important;
-	}
-
 	.actions-list {
 		--button-size-icon: var(--tab-min-height) !important;
 		--button-border-radius: var(--border-radius-circle) !important;
@@ -60,7 +56,6 @@
 	}
 
 	#sidebar-tools-and-extensions-splitter {
-		background-color: transparent !important;
 		min-width: calc(2 * var(--default-focusring-width)) !important;
 		min-height: calc(2 * var(--default-focusring-width)) !important;
 		border: none !important;
